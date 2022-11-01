@@ -81,10 +81,10 @@
                 <!-- Order Form -->
                 <div class="order-form">
                     <h1>Mulai Memesan</h1>
-                    <a onclick="Log-Masuk">Log Masuk</a>
+                    <a class="pesan_login">Log Masuk</a>
                     <span id="separator"></span>
-                    <a onclick="Pesan-Tamu">Pesan sebagai tamu</a>
-                    <div class="log-masuk">
+                    <a class="pesan_tamu">Pesan sebagai tamu</a>
+                    <div id="window-login">
                         <input placeholder="Email"/>
                         <input placeholder="Password"/>
                         <input type="checkbox" class="remember-me">
@@ -94,6 +94,11 @@
                         <div id="register-span"></div>
                         <button>DAFTAR SEKARANG</button>
                         <p id="benefit">untuk menikmati keuntungan anggota</p>
+                    </div>
+                    <div id="window-tamu">
+                        <h1>LANJUT TANPA DAFTAR</h1>
+                        <p>Selesai pesanan dengan pembayaran online sebagai tamu</p>
+                        <button>PESANAN TAMU</button>
                     </div>
                 </div>
             </div>
