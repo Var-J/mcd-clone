@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: "Din Black",sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0 20%;
+    background-color: #f3f3f3;
+}
+
+.system {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.system span {
+    width: 0;
+    height: 10px;
+    border: 1px solid grey;
+}
+
+.system img {
+    width: 20px;
+    height: 20px;
+}
+
+.system div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-bar {
+    width: 1150px;
+    height: 60px;
+    background-color: #3d3d3d;
+    border-radius: 7px;
+    box-shadow: inset 0 15px 10px #585858;
+    display: flex;
+}
+
+.mcdelivery {
+    width: 180px;
+    height: 60px;
+    background-color: #bd0017;
+    border-radius: 7px 0 0 7px;
+    text-align: center;
+}
+
+.mcdelivery img {
+    position: relative;
+    top: 5px;
+}
+
+.nav-bar div {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu, .penawaran-menarik, .akun-saya, .bantuan {
+    margin: auto 40px;
+    border: none;
+}
+
+.nav-bar div:hover {
+    color: #d3d3d3;
+}
+
+.nav-bar span {
+    width: 1px;
+    height: 60px;
+    background-color: #4f4f4f;
+    box-shadow: 1px 0 black;
+}
+
+/* Promo Banner */
+
+.slider {
+    margin-top: 20px;
+    width: 1150px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 1150px;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1150px;
+    height: 600px;
+}
+
+/* css for manual navigation */
+.navigation-manual {
+    position: absolute;
+    width: 1150px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: black;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -1150px;
+}
+#radio3:checked ~ .first {
+    margin-left: -2300px;
+}
+#radio4:checked ~ .first {
+    margin-left: -3450px;
+}
+
+/* css for automatic navigation */
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1150px;
+    justify-content: center;
+    margin-top: 560px;
+}
+
+.navigation-auto div {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: black;
+}
+
+.entire-container {
+    position: relative;
+}
+
+.order-form {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 400px;
+    height: 500px;
+    background-color: #c7b3b3cc;
+    text-align: center;
+}
+
+#separator {
+    width: 0;
+    height: 12px;
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+.order-form a {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.order-form input {
+    width: 80%;
+    height: 40px;
+    margin: 15px 0 -15px 0;
+    padding: 10px;
+}
+
+.remember-me {
+    position: absolute;
+    top: 185px;
+    right: 180px;
+}
+
+#remember-me {
+    font-weight: 400;
+    position: absolute;
+    top: 195px;
+    right: 230px;
+}
+
+.order-form button {
+    width: 80%;
+    height: 50px;
+    background-color: red;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+#forgot-password {
+    margin-right: 40px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#register-span {
+    width: 80%;
+    height: 1px;
+    background-color: grey;
+    margin: -10px auto -40px auto;
+}
+
+#benefit {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 40px auto;  
+}
+
