@@ -196,8 +196,9 @@ body {
 }
 
 #separator {
-    width: 0;
+    width: 0px;
     height: 12px;
+    background-color: black;
     border: 1px solid black;
     margin: 0 20px;
 }
@@ -207,23 +208,55 @@ body {
     cursor: pointer;
 }
 
+#highlight1 {
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+}
+
+#highlight2 {
+    width: 38%;
+    height: 3px;
+    position: absolute;
+    right: 60px;
+    top: 100px;
+}
+
+.pesan_login:hover ~ #highlight1{
+    background-color: red;
+}
+
+.pesan_tamu:hover ~ #highlight2{
+    background-color: red;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.red {
+    background-color: red;
+}
+
 .order-form input {
     width: 80%;
     height: 40px;
-    margin: 15px 0 -15px 0;
+    margin: 20px 0 -15px 0;
     padding: 10px;
 }
 
 .remember-me {
     position: absolute;
-    top: 185px;
+    top: 190px;
     right: 180px;
 }
 
 #remember-me {
     font-weight: 400;
     position: absolute;
-    top: 195px;
+    top: 207px;
     right: 230px;
 }
 
@@ -264,4 +297,48 @@ body {
 }
 #window-login {
     display: block;
+}
+
+#window-tamu h1 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.offer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.offer-container img {
+    width: 370px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+.offer-container a {
+    cursor: pointer;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: #4f4f4f;
+    margin: 50px auto;
+}
+
+.order-instruction {
+    margin: -20px auto 30px auto;
+}
+
+.order-instruction a {
+    cursor: pointer;
+}
+
+#footer-container {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    height: 400px;
+    background-color: #353535;
 }
