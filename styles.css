@@ -350,6 +350,7 @@ footer {
     width: 100vw;
     margin: -20px;
     padding-left: 40px;
+    padding-top: 40px;
     height: auto;
     background-color: #353535;
 }
@@ -362,7 +363,7 @@ footer {
     text-align: left;
     justify-content: flex-start;
     color: white;
-    gap: 100px;
+    gap: 140px;
 }
 
 #trademark {
@@ -391,6 +392,7 @@ footer {
 #menu h1, #bantuan h1, #ikuti-kami h1{
     font-size: 20px;
     font-family: "Flama Condensed Medium",sans-serif;
+    margin-bottom: 30px;
 }
 
 li {
