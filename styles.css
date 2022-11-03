@@ -4,12 +4,17 @@
 }
 
 body {
-    margin: 0 auto;
-    max-width: 1150px;
     background-color: #f3f3f3;
 }
 
+main {  
+    margin: 0 auto;
+    max-width: 1150px;
+}
+
 .system {
+    margin: 0 auto;
+    max-width: 1150px;
     width: 1150px;
     display: flex;
     justify-content: space-between;
@@ -35,6 +40,8 @@ body {
 }
 
 .nav-bar {
+    margin: 0 auto;
+    max-width: 1150px;
     width: 1150px;
     height: 60px;
     background-color: #3d3d3d;
@@ -335,10 +342,77 @@ body {
     cursor: pointer;
 }
 
+footer {
+    margin-top: 1580px;
+}
+
 #footer-container {
     width: 100vw;
-    max-width: 100%;
-    margin: 0;
-    height: 400px;
+    margin: -20px;
+    padding-left: 40px;
+    height: auto;
     background-color: #353535;
 }
+
+#container1 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1150px;
+    height: 400px;
+    text-align: left;
+    justify-content: flex-start;
+    color: white;
+    gap: 100px;
+}
+
+#trademark {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    padding-top: 10px;
+    margin: 40px -30px 0 -30px;
+    background-color: #1d1d1d;
+    color: #878e90;
+}
+
+#trademark p {
+    margin: 10px auto;
+    font-family: "Flama Condensed Medium",sans-serif;
+}
+
+#menu ul, #bantuan ul, #ikuti-kami ul{
+    list-style-type: none;
+    margin-left: -40px;
+    font-size: 14px;
+}
+
+#menu h1, #bantuan h1, #ikuti-kami h1{
+    font-size: 20px;
+    font-family: "Flama Condensed Medium",sans-serif;
+}
+
+li {
+    margin: 15px 0;
+    color: #727272;
+}
+
+#ikuti-kami li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+li:hover {
+    color: #cdcdcd;
+}
+
+a {
+    cursor: pointer;
+}
+
+i {
+    color:white;
+    margin-right: 15px;
+}
+
